@@ -1,0 +1,19 @@
+.cooperation{
+    text-align: right;
+}
+.cooperation__list{
+    display: flex;
+
+    @media (max-width: 782px) {
+        display: none;
+    }
+}
+.cooperation__link{
+    font-family: Roboto;
+    font-weight: 300;
+    white-space: nowrap;
+    padding: 10px;
+}
+.cooperation__item:first-child .cooperation__link{
+    padding-left: 0;
+}

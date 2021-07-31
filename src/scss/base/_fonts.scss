@@ -1,0 +1,55 @@
+/*
+@include font-face($font-family: "Verdana", $file-name: "Verdana-Bold", $font-weight: 400, $font-style: "normal");
+*/
+
+@include font-face($font-family: "Roboto", $file-name: "Roboto-Light", $font-weight: 300, $font-style: "normal");
+@include font-face($font-family: "Roboto", $file-name: "Roboto-LightItalic", $font-weight: 300, $font-style: "Italic");
+@include font-face($font-family: "Roboto", $file-name: "Roboto-Regular", $font-weight: 400, $font-style: "normal");
+@include font-face($font-family: "Roboto", $file-name: "Roboto-Medium", $font-weight: 500, $font-style: "normal");
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  .icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    // font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    // font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-drop-up::after {
+    content: "\e900";
+    font-size: 10px;
+    font-weight: normal;
+    font-family: 'icomoon' !important;
+    margin-left: 5px;
+  }
+  .icon-drop-down::after {
+    content: "\e901";
+    font-size: 10px;
+    font-weight: normal;
+    font-family: 'icomoon' !important;
+    margin-left: 5px;
+  }
+  .icon-search:before {
+    content: "\e902";
+    font-weight: normal;
+    font-family: 'icomoon' !important;
+  }
+  .icon-asks:before {
+    content: "\e903";
+  }
+  
