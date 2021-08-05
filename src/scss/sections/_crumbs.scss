@@ -1,0 +1,31 @@
+.crumbs{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.crubs__list{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: min-content;
+}
+.crupbs__inner{
+    overflow-x: auto;
+}
+.crumbs__link{
+    white-space: nowrap;
+    padding: 10px;
+}
+.crumbs__item{
+    display: flex;
+    align-items: center;
+}
+.crumbs__item::after{
+    content: '\e904';
+    font-family: icomoon;
+    font-size: 10px;
+}
+.crumbs__item:last-child.crumbs__item::after{
+    display: none;
+}
+.crumbs__item:last-child .crumbs__link{
+    padding-left: none;
+}

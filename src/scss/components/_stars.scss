@@ -1,0 +1,28 @@
+.stars__item{
+    width: 17px;
+    height: 17px;
+    background-image: url('./../svg/star-full.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.stars__item--current ~ .stars__item{
+    background-image: url('./../svg/star-empty.svg');
+}
+.stars__list{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 8px;
+    justify-content: start;
+}
+.stars{
+    display: flex;
+    align-items: center;
+}
+.stars__list{
+    margin-right: 10px;
+}
+.stars__reviews{
+    font-size: 14px;
+    font-weight: 400;
+}

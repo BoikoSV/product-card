@@ -1,0 +1,49 @@
+.select-color{
+
+    
+}
+.select-color__title{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+.selector-color__name{
+    font-weight: 300;
+}
+.select-color__list{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 20px;
+
+    @media (max-width: 780px) {
+        margin-bottom: 23px;
+    }
+}
+.select-color__item{
+    position: relative;
+    width: 54px;
+}
+.select-color__item::after{
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+.delect-color__radio{
+    position: absolute;
+    left: -99999px;
+}
+.select-color__label{
+    position: absolute;
+    cursor: pointer;
+}
+.select-color__label{
+    padding: 2px;
+    
+}
+
+.delect-color__radio:checked ~ .select-color__label{
+    padding: 2px;
+    background-image: linear-gradient(96.78deg, #F64D4D -57.09%, #4D5EF6 101.17%);
+    
+}

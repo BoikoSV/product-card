@@ -1,0 +1,207 @@
+.main-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-text__title{
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 500;
+
+    @media (max-width: 1000px) {
+        font-size: 24px;
+    }
+    @media (max-width: 780px) {
+        margin-bottom: 15px;
+    }
+    @media (max-width: 760px) {
+        font-size: 20px;
+    }
+}
+.main-text__rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 780px) {
+        margin-bottom: 20px;
+    }
+    @media (max-width: 760px) {
+        flex-wrap: wrap;
+    }
+}
+.main-text__stars{
+
+    @media (max-width: 760px) {
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    
+}
+.main-text__favorite{
+    @media (max-width: 760px) {
+        margin-bottom: 15px;
+    }
+}
+.main-text__favorite{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.main-text__favorite::before{
+    content: '';
+    display: block;
+    margin-right: 10px;
+    width: 17px;
+    height: 17px;
+    background-image: url('./../svg/heart-empty.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-text__favorite--current::before{
+    background-image: url('./../svg/heart.svg');
+}
+.main-text__count{
+    font-size: 12px;
+    font-weight: 300;
+    white-space: nowrap;
+
+    @media (max-width: 900px) {
+        display: none;
+    }
+}
+.main-text__count-span{
+    font-weight: 400;
+}
+
+
+.main-text__price-new{
+    color: $color-red;
+    font-size: 32px;
+    font-weight: 500;
+}
+.main-text__price-new::after{
+    content: '\20BD';
+    margin-left: 6px;
+}
+.main-text__price-old{
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(#464646, 0.55);
+    position: relative;
+}
+.main-text__price-old::after{
+    content: '\20BD';
+    margin-left: 4px;
+}
+.main-text__price-old::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(#464646, 0.55);
+    top: 50%;
+    transform: rotate(-10deg);
+}
+.main-text__price-sale{
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+}
+.main-text__price-sale::after{
+    content: '\002A';
+    color: $color-red;
+}
+.main-text__sale-size::after{
+    content: '\20BD';
+    margin-left: 3px;
+}
+.main-text__price-new{
+    margin-right: 22px;
+}
+.main-text__price-sale{
+    margin-top: 8px;
+}
+.main-text__price{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 250px;
+
+    @media (max-width: 780px) {
+        margin-bottom: 30px;
+    }
+}
+.main-text__add-wrapper{
+    display: flex;
+    align-items: center;
+}
+.main-text__add-wrapper{
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 780px) {
+        margin-bottom: 24px;
+    }
+
+    @media (max-width: 1210px) {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 20px;
+        justify-content: start;
+    }
+}
+.main-text__counter-box{
+    @media (max-width: 1210px) {
+        grid-column: span 2;
+    }
+}
+.main-text__buy{
+
+    @media (max-width: 860px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.main-text__add-to-card{
+    @media (max-width:860px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.main-text__more-info{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.main-text__region-name,
+.main-text__time-count,
+.main-text__about-count{
+    font-weight: 300;
+}
+.main-text__about{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main-text__more-links{
+    display: flex;
+    justify-content: space-between;
+}
+.main-text__more-links .btn-small{
+    flex: 1 1;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.main-text__more-links .btn-small:first-child{
+    margin-left: 0;
+}
+.main-text__more-links .btn-small:last-child{
+    margin-right: 0;
+}

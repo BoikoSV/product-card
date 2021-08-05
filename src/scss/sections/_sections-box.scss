@@ -1,0 +1,12 @@
+.section-box__layout{
+    display: grid;
+    grid-template-columns: 1fr 406px;
+    column-gap: 33px;
+
+    @media (max-width: 1220px) {
+        grid-template-columns: 1fr 350px;
+    }
+    @media (max-width: 940px) {
+        display: block;
+    }
+}

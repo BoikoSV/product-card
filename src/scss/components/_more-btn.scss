@@ -1,0 +1,17 @@
+.more__button{
+    background-image: linear-gradient(96.78deg, #F64D4D -57.09%, #4D5EF6 101.17%);
+    -webkit-background-clip: text;
+    border: none;
+    font-weight: 400;
+    color: transparent;
+    padding: 10px;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+.more__button::after{
+    content: '\e901';
+    font-family: icomoon;
+    color: #000;
+    margin-left: 5px;
+    font-size: 12px;
+}

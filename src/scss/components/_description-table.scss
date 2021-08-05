@@ -1,0 +1,23 @@
+.description__table-wrap{
+    margin-bottom: 40px;
+    overflow-x: auto;
+    position: relative;
+}
+.description__table{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    text-align: center;
+    width: 80%;
+}
+.size-table{
+    font-weight: 400;
+}
+.size-table__th,
+.size-table__td{
+    border: 1px solid black;
+    padding: 10px;
+}
+.size-table__th{
+    background-color: #FFF3CE;
+}

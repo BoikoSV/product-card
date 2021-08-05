@@ -26,7 +26,10 @@ function styles(){
 }
 
 function scripts(){
-    return src('./src/js/**/*')
+    return src([
+        './node_modules/swiper/swiper-bundle.min.js',
+        './src/js/**/*'
+    ])
         .pipe(uglify())
         .pipe(concat('script.min.js'))
         .pipe(dest('./dist/js'))

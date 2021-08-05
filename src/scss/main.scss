@@ -8,6 +8,12 @@
 @import "base/global";
 
 
+/***************************
+        LIBRARYS
+***************************/
+@import "./../../node_modules/swiper/swiper.scss";
+@import "./../../node_modules/swiper/components/navigation/navigation.scss";
+
 
 
 /***************************
@@ -18,6 +24,26 @@
 @import "components/search";
 @import "components/local";
 @import "components/user-menu";
+@import "components/main-img";
+@import "components/buttons";
+@import "components/main-text";
+@import "components/stars";
+@import "components/select-color";
+@import "components/size";
+@import "components/counter";
+@import "components/btn-small";
+@import "components/main-gallary";
+@import "components/main-rating";
+@import "components/main-delivery";
+@import "components/price";
+@import "components/section-title";
+@import "components/swiper-box";
+@import "components/card";
+@import "components/description-slider";
+@import "components/description-table";
+@import "components/reviews-item";
+@import "components/more-btn";
+
 
 
 
@@ -26,3 +52,11 @@
           SECTIONS
 ***************************/
 @import "sections/header";
+@import "sections/crumbs";
+@import "sections/main-info";
+@import "sections/sections-box";
+@import "sections/characteristics";
+@import "sections/description";
+@import "sections/ads";
+@import "sections/rating";
+@import "sections/reviews";

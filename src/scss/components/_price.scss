@@ -1,0 +1,27 @@
+.price{
+    display: inline-block;
+}
+.price::after{
+    content: '\20BD';
+    margin-left: 0.2em;
+}
+.price__new{
+    color: $color-red;
+    font-weight: 500;
+}
+.price__old{
+    color: rgba(#464646, 5.5);
+    font-weight: 400;
+    display: inline-block;
+    position: relative;
+}
+.price__old::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: rotate(-10deg);
+    background-color: $color-red;
+}

@@ -1,0 +1,21 @@
+.banner{
+    margin-bottom: 40px;
+}
+.banner__pagination{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 3px;
+
+    .swiper-pagination-bullet{
+        width: 25px;
+        height: 4px;
+        background-color: rgba(#000, 0.4);
+        margin: 3px;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: rgba(#fff, 1)
+    }
+}
