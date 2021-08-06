@@ -120,4 +120,9 @@
     border-radius: 4px;
     font-size: 14px;
     font-weight: 400;
+
+    &:hover{
+        background-image: linear-gradient(96.78deg, rgba(246, 77, 77, 1) -57.09%, rgba(77, 94, 246, 1) 101.17%);
+        color: #fff;
+    }
 }

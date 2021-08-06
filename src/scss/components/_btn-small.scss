@@ -4,6 +4,14 @@
     line-height: 28px;
     display: inline-block;
     position: relative;
+    transition: color 0.3s;
+
+    &:hover{
+        color: #fff;
+    }
+    &:hover::after{
+        background-color: transparent;
+    }
 }
 .btn-small::before {
     content: "";
@@ -26,4 +34,5 @@
     background-color: #fff;
     border-radius: 3px;
     z-index: -1;
+    transition: background-color 0.3s;
 }

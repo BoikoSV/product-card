@@ -29,3 +29,12 @@
 .crumbs__item:last-child .crumbs__link{
     padding-left: none;
 }
+.crumbs__item:last-child{
+    font-weight: 500;
+}
+.crumbs__item:not(:last-child){
+    transition: color 0.3s;
+    &:hover{
+        color: #ec64b1;
+    }
+}
