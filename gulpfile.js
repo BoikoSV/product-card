@@ -27,6 +27,7 @@ function styles(){
 
 function scripts(){
     return src([
+        './node_modules/medium-zoom/dist/medium-zoom.js',
         './node_modules/swiper/swiper-bundle.min.js',
         './src/js/**/*'
     ])
