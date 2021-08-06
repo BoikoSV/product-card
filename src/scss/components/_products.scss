@@ -1,0 +1,27 @@
+.products{
+    padding-bottom: 50px;
+}
+.products__grid{
+    display: grid;
+    column-gap: 80px;
+    row-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+
+    @media (max-width: 1200px) {
+        column-gap: 60px;
+        row-gap: 30px;
+    }
+    
+}
+.product__header{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.products__button{
+    border: none;
+    background-color: transparent;
+}
