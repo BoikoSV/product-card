@@ -7,7 +7,7 @@
 
     const swiper = new Swiper(gallaryContainer, {
         slidesPerView: 1,
-        // spaceBetween: 10,
+        spaceBetween: 10,
         navigation: {
             nextEl: next,
             prevEl: prev,

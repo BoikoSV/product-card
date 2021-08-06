@@ -52,3 +52,17 @@
         color: #000;
     }
 }
+.main-gallary__slide{
+    cursor: pointer;
+    object-fit: contain;
+}
+.main-gallary__img{
+    width: 100%;
+    height: 100%;
+}
+.main-gallary__slide{
+    border: 3px solid rgba(#B7538C, 0);
+}
+.main-gallary__slide--active{
+    border-color: rgba(#B7538C, 1);
+}

@@ -12,8 +12,7 @@
 }
 .select-color__list{
     display: grid;
-    grid-auto-flow: column;
-    justify-content: start;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     gap: 20px;
 
     @media (max-width: 780px) {
