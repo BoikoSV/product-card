@@ -7,11 +7,13 @@
         if(e.target.closest('.counter__increment')){
             if(isCorrectInput(input.value)){
                 ++input.value;
+                input.dispatchEvent(new Event('input'));
             }
         }
         if(e.target.closest('.counter__decrement')){
             if(isCorrectInput(input.value) && +input.value > 1){
                 --input.value;
+                input.dispatchEvent(new Event('input'));
             }
         }
     })

@@ -10,51 +10,62 @@
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    transition: background-image 0.3s;
+    position: relative;
+    overflow: hidden;
+    // transition: background-image 0.3s;
 
-    &:hover{
-        background-image: linear-gradient(96.78deg, #4d5ef6 -57.09%, #f64d4d 101.17%);
+    // &:hover{
+    //     background-image: linear-gradient(96.78deg, #4d5ef6 -57.09%, #f64d4d 101.17%);
+    // }
+}
+.btn-full::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 400px;
+    top: -200px;
+    left: -300px;
+    transform: rotate(45deg);
+    background-color: #fff;
+    opacity: 0.5;
+    transition: transform 1s;
+}
+.btn-full:hover{
+
+    &::after{
+        transform: translateX(750px) rotate(45deg);
     }
 }
-
 
 .btn-main {
-    font-size: 14px;
-    font-family: Roboto;
-    font-weight: 500;
-    line-height: 44px;
-    padding-left: 30px;
-    padding-right: 30px;
-    position: relative;
-    white-space: nowrap;
-    cursor: pointer;
-    transition: color 0.3s;
+        font-size: 14px;
+        font-family: Roboto;
+        font-weight: 500;
+        line-height: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        white-space: nowrap;
+        cursor: pointer;
+        border: 2px solid transparent;
+        border-image: linear-gradient(96.78deg, #f64d4d -57.09%, #4d5ef6 101.17%);
+        border-image-slice: 1;
+        background-color: rgba(#fff, 1);
+        transition: background-color 0.3s, color 0.3s;
+        position: relative;
+        
+        &::after{
+            content: '';
+            position: absolute;
+            left: -1px;
+            top: -1px;
+            right: -1px;
+            bottom: -1px;
+            background-image: linear-gradient(96.78deg, #f64d4d -57.09%, #4d5ef6 101.17%);
+            z-index: -1;
+        }
 
-    &:hover{
-        color: #fff;
-    }
-    &:hover::after{
-        background-color: transparent;
-    }
-}
-.btn-main::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(96.78deg, #f64d4d -57.09%, #4d5ef6 101.17%);
-    z-index: -2;
-}
-.btn-main::after{
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    right: 2px;
-    bottom: 1px;
-    background-color: #fff;
-    z-index: -1;
-    transition: background-color 0.3s;
+        &:hover{
+            background-color: rgba(#fff, 0);
+            color: #fff;
+        }
 }

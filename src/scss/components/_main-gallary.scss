@@ -61,8 +61,9 @@
     height: 100%;
 }
 .main-gallary__slide{
-    border: 3px solid rgba(#B7538C, 0);
+    border: 3px solid transparent;
 }
 .main-gallary__slide--active{
-    border-color: rgba(#B7538C, 1);
+    border-image: linear-gradient(96.78deg, #F64D4D -57.09%, #4D5EF6 101.17%);
+    border-image-slice: 1;
 }
