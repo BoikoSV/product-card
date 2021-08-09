@@ -1,22 +1,84 @@
-.menu{
-    background-image: linear-gradient(96.78deg, rgba(#F64D4D, 0.1) -0.09%, rgba(#4D5EF6, 0.1) 20.17%, rgba(#4D5EF6, 0.1) 20.17%, #fff 50%);
+.menu {
     position: absolute;
-    width: 100%;
-    z-index: 100;
+    border: 1px solid red;
+    background-image: linear-gradient(96.78deg, rgba(#f64d4d, 0.2) -57.09%, rgba(#4d5ef6, 0.2) 101.17%);
+    left: 0;
+    right: 0;
+    z-index: 20;
     background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.menu__item{
-    // display: grid;
-    // grid-template-columns: 1fr 4fr;
+.menu__list {
+    position: relative;
+    min-height: 70vh;
 }
-.menu__content-box{
+.menu__box {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    background-color: #fff;
+    right: 0;
+    height: 100%;
+    overflow-y: auto;
     display: none;
-    background-color: #fff;
-    float: right;
-    width: 80%;
+    padding: 30px;
 }
-.menu__item--active{
-    .menu__content-box{
-        display: block;
+.menu__item:first-child {
+    .menu__box {
+        display: grid;
     }
+    .menu__title {
+        background-color: #fff;
+    }
+}
+
+.menu__title {
+    padding: 0.7em;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+.sub-menu__title{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0.7em;
+}
+.sub-menu__link{
+    display: block;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.2;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    
+    &:hover{
+        background-image: linear-gradient(96.78deg, #F64D4D -57.09%, #4D5EF6 101.17%);
+        color: #fff;
+        
+    }
+}
+.menu__item:hover {
+    .menu__box {
+        display: grid;
+    }
+    .menu__title {
+        background-color: #fff;
+    }
+}
+.menu__list:hover .menu__item:not(:hover) .menu__title{
+    background-color: transparent;
+}
+
+//grid menu__box
+
+.menu__box{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
 }
