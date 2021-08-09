@@ -11,73 +11,7 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="header__wrapper">
-                    <button class="menu-btn menu-btn--open">
-                        <span class="menu-btn__line"></span>
-                    </button>
-                    <a href="#" class="logo">
-                        <img src="./dist/svg/logo.svg" alt="" class="logo__img">
-                    </a>
-                </div>
-                <div class="cooperation">
-                    <ul class="cooperation__list">
-                        <li class="cooperation__item">
-                            <a href="#" class="cooperation__link icon icon-drop-down">Покупателям</a>
-                        </li>
-                        <li class="cooperation__item">
-                            <a href="#" class="cooperation__link icon icon-drop-down">Поставщикам</a>
-                        </li>
-                        <li class="cooperation__item">
-                            <a href="#" class="cooperation__link">Частые вопросы</a>
-                        </li>
-                    </ul>
-                </div>
-                <form action="" class="search" method="GET">
-                    <input type="text" class="search__input">
-                    <button class="search__btn icon icon-search" type="submit"></button>
-                    <button class="search__list icon icon-drop-down">Везде</button>
-                </form>
-                <div class="local">
-                    <button class="local__asks icon icon-asks"></button>
-                    <div class="local__current icon icon-drop-down">
-                        <div class="local__current-img-wrap">
-                            <img src="./dist/svg/flag-ru.svg" width="20" height="13" alt="" class="local__current-flag">
-                        </div>
-                        <span class="local__current-lang">Руский</span>
-                        <span class="local__current-sumbol">&#8381;</span>
-                    </div>
-                </div>
-                <div class="user-menu">
-                    <a href="#" class="user-menu__item user-menu__search">
-                        <div class="user-menu__img-wrap icon icon-search"></div>
-                        <span class="user-menu__text">Войти</span>
-                    </a>
-                    <a href="#" class="user-menu__item user-menu__login">
-                        <div class="user-menu__img-wrap">
-                            <img src="./dist/svg/bust.svg" width="26" height="26" alt="" class="user-menu__img">
-                        </div>
-                        <span class="user-menu__text">Войти</span>
-                    </a>
-                    <a href="#" class="user-menu__item user-menu__favorites">
-                        <div class="user-menu__img-wrap">
-                            <img src="./dist/svg/heart.svg" width="24" height="25" alt="" class="user-menu__img">
-                            <span class="user-menu__count">1</span>
-                        </div>
-                        <span class="user-menu__text">Избранное</span>
-                    </a>
-                    <a href="#" class="user-menu__item user-menu__cart">
-                        <div class="user-menu__img-wrap">
-                            <img src="./dist/svg/cart.svg" width="27" height="26" alt="" class="user-menu__img">
-                            <span class="user-menu__count">3</span>
-                        </div>
-                        <span class="user-menu__text">Корзина</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <nav class="menu">
+        <nav class="menu menu__animation--close">
             <div class="container">
                 <ul class="menu__list">
                     <li class="menu__item">
@@ -1588,6 +1522,75 @@
                 </ul>
             </div>
         </nav>
+        <div class="header__padding">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__wrapper">
+                        <button class="menu-btn">
+                            <span class="menu-btn__line"></span>
+                        </button>
+                        <a href="#" class="logo">
+                            <img src="./dist/svg/logo.svg" alt="" class="logo__img">
+                        </a>
+                    </div>
+                    <div class="cooperation">
+                        <ul class="cooperation__list">
+                            <li class="cooperation__item">
+                                <a href="#" class="cooperation__link icon icon-drop-down">Покупателям</a>
+                            </li>
+                            <li class="cooperation__item">
+                                <a href="#" class="cooperation__link icon icon-drop-down">Поставщикам</a>
+                            </li>
+                            <li class="cooperation__item">
+                                <a href="#" class="cooperation__link">Частые вопросы</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form action="" class="search" method="GET">
+                        <input type="text" class="search__input">
+                        <button class="search__btn icon icon-search" type="submit"></button>
+                        <button class="search__list icon icon-drop-down">Везде</button>
+                    </form>
+                    <div class="local">
+                        <button class="local__asks icon icon-asks"></button>
+                        <div class="local__current icon icon-drop-down">
+                            <div class="local__current-img-wrap">
+                                <img src="./dist/svg/flag-ru.svg" width="20" height="13" alt="" class="local__current-flag">
+                            </div>
+                            <span class="local__current-lang">Руский</span>
+                            <span class="local__current-sumbol">&#8381;</span>
+                        </div>
+                    </div>
+                    <div class="user-menu">
+                        <a href="#" class="user-menu__item user-menu__search">
+                            <div class="user-menu__img-wrap icon icon-search"></div>
+                            <span class="user-menu__text">Войти</span>
+                        </a>
+                        <a href="#" class="user-menu__item user-menu__login">
+                            <div class="user-menu__img-wrap">
+                                <img src="./dist/svg/bust.svg" width="26" height="26" alt="" class="user-menu__img">
+                            </div>
+                            <span class="user-menu__text">Войти</span>
+                        </a>
+                        <a href="#" class="user-menu__item user-menu__favorites">
+                            <div class="user-menu__img-wrap">
+                                <img src="./dist/svg/heart.svg" width="24" height="25" alt="" class="user-menu__img">
+                                <span class="user-menu__count">1</span>
+                            </div>
+                            <span class="user-menu__text">Избранное</span>
+                        </a>
+                        <a href="#" class="user-menu__item user-menu__cart">
+                            <div class="user-menu__img-wrap">
+                                <img src="./dist/svg/cart.svg" width="27" height="26" alt="" class="user-menu__img">
+                                <span class="user-menu__count">3</span>
+                            </div>
+                            <span class="user-menu__text">Корзина</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </header>
     <section class="crumbs">
         <div class="container">
