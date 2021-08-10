@@ -13,30 +13,31 @@
     display: none;
     opacity: 0;
     transform: translateY(80%);
-    // transition: all ease-out 0.3s;
     transition-property: transform, opacity;
-    transition-duration: 0.5s, 0.2s;
+    transition-duration: 0.3s, 0.2s;
     transition-timing-function: ease-out;
     box-shadow: 0px 30px 30px 10px #00000033;
 
+    @media (max-width: 500px) {
+        height: calc(100vh - 129px);
+        overflow-y: auto;
+    }
 }
 
-.menu--open{
+.menu--open {
     display: block;
-    // opacity: 0;
-    // transform: translateY(80%);
 }
-.menu__animation--close{
+.menu__animation--close {
     opacity: 0;
-    transform: translateY(80%);  
+    transform: translateY(80%);
     transition-property: transform, opacity;
-    transition-duration: 0.5s, 0.2s;
-    transition-delay: 0s, 0.3s;
+    transition-duration: 0.3s, 0.2s;
+    transition-delay: 0s, 0.1s;
     transition-timing-function: ease-out;
 }
-.menu__animation--open{
+.menu__animation--open {
     opacity: 1;
-    transform: translateY(100%);   
+    transform: translateY(100%);
 }
 
 .menu__list {
@@ -53,13 +54,30 @@
     overflow-y: auto;
     display: none;
     padding: 30px;
+
+    @media (max-width: 500px) {
+        position: static;
+        height: auto;
+        display: block;
+        background-color: transparent;
+        padding: 10px;
+        padding-left: 30px;
+    }
 }
 .menu__item:first-child {
     .menu__box {
         display: grid;
+
+        @media (max-width: 500px) {
+            display: none;
+        }
     }
     .menu__title {
         background-color: #fff;
+
+        @media (max-width: 500px) {
+            background-color: unset;
+        }
     }
 }
 
@@ -74,13 +92,37 @@
     white-space: nowrap;
     overflow-x: hidden;
     text-overflow: ellipsis;
+
+    @media (max-width: 500px) {
+        width: 100%;
+        border-radius: 0.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &::after {
+        display: none;
+        @media (max-width: 500px) {
+            display: block;
+            content: "\e904";
+            font-family: icomoon;
+            font-size: 12px;
+        }
+    }
 }
-.sub-menu__title{
+.sub-menu__title {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 0.7em;
 }
-.sub-menu__link{
+.sub-menu__title + .sub-menu__list{
+
+    @media (max-width: 500px) {
+        display: none;
+    }
+}
+.sub-menu__link {
     display: block;
     height: 100%;
     font-size: 14px;
@@ -91,28 +133,67 @@
     white-space: nowrap;
     overflow-x: hidden;
     text-overflow: ellipsis;
-    
-    &:hover{
-        background-image: linear-gradient(96.78deg, #F64D4D -57.09%, #4D5EF6 101.17%);
+
+    &:hover {
+        background-image: linear-gradient(96.78deg, #f64d4d -57.09%, #4d5ef6 101.17%);
         color: #fff;
-        
+    }
+
+    @media (max-width: 500px) {
+        &::before{
+            content: '- ';
+        }
     }
 }
 .menu__item:hover {
     .menu__box {
         display: grid;
+
+        @media (max-width: 500px) {
+            display: none;
+        }
     }
     .menu__title {
         background-color: #fff;
+
+        @media (max-width: 500px) {
+            background-color: unset;
+        }
     }
 }
-.menu__list:hover .menu__item:not(:hover) .menu__title{
+.menu__list:hover .menu__item:not(:hover) .menu__title {
     background-color: transparent;
 }
 
 //grid menu__box
 
-.menu__box{
+.menu__box {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 40px;
+
+    @media (max-width: 500px) {
+        grid-gap: unset;
+        grid-template-columns: unset;
+        display: none;
+    }
+}
+
+.menu__item{
+    @media (max-width: 500px) {
+        .menu__title.menu__title--active{
+            background-color: #fff;
+
+            &::after{
+                transform: rotate(90deg);
+            }
+        }
+
+        .menu__title--active + .menu__box{
+            display: block;
+
+            .sub-menu__title--active + .sub-menu__list{
+                display: block;
+            }
+        }
+    }
 }
