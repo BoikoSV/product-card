@@ -1,5 +1,5 @@
 # Карточка товара (верстка)  
-https://github.com/BoikoSV/product-card
+https://boikosv.github.io/product-card/
 #### Использовынные технологии
 * HTML/CSS/SCSS
 * JavaScirpt
