@@ -1,4 +1,5 @@
-# Карточка товара (верстка)  https://github.com/BoikoSV/product-card
+# Карточка товара (верстка)  
+https://github.com/BoikoSV/product-card
 #### Использовынные технологии
 * HTML/CSS/SCSS
 * JavaScirpt
